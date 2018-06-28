@@ -1,0 +1,30 @@
+#heading {
+	width: 100%;
+	padding: 25px 25px;
+	font-size: 28px;
+	font-weight: bold;
+	background-color: #696969;
+	color: white;
+	margin: 0px 5px;
+}
+.subheading {
+	float: left;
+	background-color: #d3d3d3;
+	color: black;
+	font-size: 18px;
+	margin: 0px 10px 5px 5px;
+	padding: 50px 25px;
+}
+.content{
+	width: 100%;
+	height: 112px;
+}
+p {
+	font-size: 14px;
+	margin: 18px 40px;
+	font-weight: bold;
+}
+span {
+	font-weight: normal;
+	margin: 0px 40px 0px 8px;
+}
