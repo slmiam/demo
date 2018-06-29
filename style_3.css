@@ -24,7 +24,8 @@ p {
 	margin: 18px 40px;
 	font-weight: bold;
 }
-span {
+span {	
+	display:block;
 	font-weight: normal;
 	margin: 0px 40px 0px 8px;
 }
