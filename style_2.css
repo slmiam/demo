@@ -1,18 +1,13 @@
-body {
-	height: 500px;
-	overflow: hidden;
-}
-#heading {
+header {
 	float: left;
 	font-weight: bold;
-	background-color: #6495ED;
+	color: #fff;
+	background-color: #649fed;
 	font-size: 35px;
-	color: white;
 	width: 180px;
 	text-align: center;
-	padding: 70px 0px 100% 0px;
+	padding: 70px 0px 450px 0px;
 	margin: 0px 30px 0px 5px;
-
 }
 .subheading {
 	margin: 20px 40px;
