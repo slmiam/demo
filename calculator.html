@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果: </p>
+    <script type="text/javascript" >
+    function cal() {
+    	var num1 = Number(document.getElementById('first-number').value);
+    	alert(num1);
+    	var num2 = Number(document.getElementById('second-number').value);
+    	alert(num2);
+    	var add = document.getElementById('add-btn');
+    	var minus = document.getElementById('minus-btn');
+    	var times = document.getElementById('times-btn');
+    	var divide = document.getElementById('divide-btn');
+    	var result = document.getElementById('result');
+    	add.onclick = function add() {
+    		if (num1 != Number(document.getElementById('first-number').value)) {
+    			num1 = Number(document.getElementById('first-number').value);
+    		}
+    		if (num2 != Number(document.getElementById('second-number').value)) {
+    			num2 = Number(document.getElementById('second-number').value);
+    		}
+    		if (result.innerHTML == "运算结果: ") {
+    			result.innerHTML += num1 + num2;
+    		} else {
+    			result.innerHTML = "运算结果: ";
+    			add();
+    		}
+    	}
+    	minus.onclick = function minus() {
+    		if (num1 != Number(document.getElementById('first-number').value)) {
+    			num1 = Number(document.getElementById('first-number').value);
+    		}
+    		if (num2 != Number(document.getElementById('second-number').value)) {
+    			num2 = Number(document.getElementById('second-number').value);
+    		}
+    		if (result.innerHTML == "运算结果: ") {
+    			result.innerHTML += num1 - num2;
+    		} else {
+    			result.innerHTML = "运算结果: ";
+    			minus();
+    		}
+    	}
+    	times.onclick = function times() {
+    		if (num1 != Number(document.getElementById('first-number').value)) {
+    			num1 = Number(document.getElementById('first-number').value);
+    		}
+    		if (num2 != Number(document.getElementById('second-number').value)) {
+    			num2 = Number(document.getElementById('second-number').value);
+    		}
+    		if (result.innerHTML == "运算结果: ") {
+    			result.innerHTML += num1 * num2;
+    		} else {
+    			result.innerHTML = "运算结果: ";
+    			times();
+    		}
+    	}
+    	divide.onclick = function divide() {
+    		if (num1 != Number(document.getElementById('first-number').value)) {
+    			num1 = Number(document.getElementById('first-number').value);
+    		}
+    		if (num2 != Number(document.getElementById('second-number').value)) {
+    			num2 = Number(document.getElementById('second-number').value);
+    		}
+    		if (result.innerHTML == "运算结果: ") {
+    			result.innerHTML += num1 / num2;
+    		} else {
+    			result.innerHTML = "运算结果: ";
+    			divide();
+    		}
+    	}
+    }
+    cal();
+    </script>
+</body>
+</html>
